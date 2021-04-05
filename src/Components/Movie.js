@@ -1,21 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
+import MovieCard from "./MovieCard";
 import "../CSS/movie.css";
+import data from "../Data/data.json";
 
-const Movie = () => {
-    return <div></div>;
-};
-
-const MovieCard = ({ props }) => {
+const MovieList = () => {
+    const [SearchedText, setTitle] = useState("");
     return (
-        <div className="MovieContainer">
-            <img src={props.src} alt={props.name} className="MovieImage" />
-            <p className="MovieName">{props.name}</p>
-            <div className="InLine">
-                <p className="MovieCategory">{props.category}</p>
-                <p className="MovieRating">{props.rating}/5</p>
+        <div>
+            <input
+                type="text"
+                className="SearchBar"
+                placeholder="Search your favourite movie :)"
+                onChange={(event) => setTitle(event.target.value)}
+            />
+            <div>
+                {data.map((ele) => {
+                    if (
+                        ele.name
+                            .toUpperCase()
+                            .includes(SearchedText.toUpperCase())
+                    ) {
+                        return <MovieCard key={ele.id} props={ele} />;
+                    }
+                    return "";
+                })}
             </div>
         </div>
     );
 };
 
-export default { Movie, MovieCard };
+const Movie = () => {
+    return (
+        <div>
+            <p className="PageHead">What Are We Gonna Watch Today?</p>
+            <MovieList />
+        </div>
+    );
+};
+
+export default Movie;

@@ -1,0 +1,25 @@
+.FooterContainer {
+    background-color: #000000;
+    padding: 15px 20px;
+}
+.FooterHead {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.AboutMe {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.CopyRight {
+    font-size: 8px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
