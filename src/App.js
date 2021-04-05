@@ -7,7 +7,7 @@ import MovieDetail from "./Components/MovieDetail";
 const App = () => {
     return (
         <div className="App">
-            <HashRouter>
+            <HashRouter basename="/">
                 <Switch>
                     <Route exact path="/">
                         <Home />

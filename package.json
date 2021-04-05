@@ -2,7 +2,6 @@
     "name": "leo-movies",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://leo-malay.github.io/Leo-Movies-React-JS/",
     "dependencies": {
         "@testing-library/jest-dom": "^5.11.10",
         "@testing-library/react": "^11.2.6",
@@ -39,7 +38,5 @@
             "last 1 safari version"
         ]
     },
-    "devDependencies": {
-        "gh-pages": "^3.1.0"
-    }
+    "devDependencies": {}
 }
