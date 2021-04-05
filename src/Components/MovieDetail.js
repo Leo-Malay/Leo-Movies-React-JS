@@ -30,12 +30,13 @@ const MovieDetail = ({ props }) => {
                 <iframe
                     width="560"
                     height="340"
+                    title={mdata.id}
                     src={mdata.demosrc + "?controls=0"}
                 >
                     Video
                 </iframe>
                 <br />
-                <MovieCard props={mdata} />
+                <MovieCard props={mdata} isLinked={{ value: true }} />
             </div>
         );
     }

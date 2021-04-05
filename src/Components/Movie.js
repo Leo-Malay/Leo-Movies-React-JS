@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import MovieCard from "./MovieCard";
 import "../CSS/movie.css";
 import data from "../Data/data.json";
@@ -20,7 +21,11 @@ const MovieList = () => {
                             .toUpperCase()
                             .includes(SearchedText.toUpperCase())
                     ) {
-                        return <MovieCard key={ele.id} props={ele} />;
+                        return (
+                            <Link to={`/movie/${ele.id}`} key={ele.id}>
+                                <MovieCard props={ele} />
+                            </Link>
+                        );
                     }
                     return "";
                 })}
@@ -32,7 +37,7 @@ const MovieList = () => {
 const Movie = () => {
     return (
         <div>
-            <p className="PageHead">What Are We Gonna Watch Today?</p>
+            <p className="PageHead">What Are We Watching Today?</p>
             <MovieList />
         </div>
     );

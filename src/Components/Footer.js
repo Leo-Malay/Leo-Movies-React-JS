@@ -4,14 +4,18 @@ import "../CSS/footer.css";
 const Footer = () => {
     return (
         <div className="FooterContainer">
-            <p className="FooterHead">LEO MOVIES</p>
-            <p className="AboutMe">
-                Hello, I am Malay Bhavsar!
-                <br />
-                want to hire me! Please Feel free to reachout
-                <br />
-                to me via Email: dev.malay.290@gmail.com
-            </p>
+            <div className="left">
+                <p className="FooterHead">LEO MOVIES</p>
+            </div>
+            <div className="right">
+                <p className="AboutMe">
+                    <b>Developer:</b> Malay Bhavsar
+                </p>
+                <p className="AboutMe">
+                    <b>Email:</b> malaybhavsar.290@gmail.com
+                </p>
+                <p className="AboutMe">Feel Free to contact me!</p>
+            </div>
             <p className="CopyRight">
                 None of the Movie-Images shown are Owned by me! Credit goes to
                 their respetive Owners!
