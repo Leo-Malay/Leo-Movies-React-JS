@@ -6,20 +6,19 @@ const Home = () => {
     return (
         <div>
             <p className="PageTitle">Welcome to Leo-Movies</p>
-            <center>
-                <p className="PageSubTitle">
-                    Developed by Malay Bhavsar to showcast his all time hot
-                    favourite Movies!
-                    <br /> Here You will find many movies that have been famous
-                    among many people. If you think that there's some movie
-                    missing then please feel free to contact me via Email given
-                    in the footer section.
-                    <br />
-                </p>
-            </center>
             <Link to={"/movie"}>
                 <button className="MovieBtn">Go to Movies</button>
             </Link>
+            <center>
+                <p className="PageSubTitle">
+                    I have made this website using ReactJS. Here I have mentions
+                    all the movies that I like watching Over and Over, Again and
+                    Again.
+                </p>
+                <p className="PageSubTitle">
+                    <b>Made with 💛 by Malay :)</b>
+                </p>
+            </center>
         </div>
     );
 };
