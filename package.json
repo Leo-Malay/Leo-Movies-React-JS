@@ -2,6 +2,7 @@
     "name": "leo-movies",
     "version": "0.1.0",
     "private": true,
+    "GENERATE_SOURCEMAP": false,
     "dependencies": {
         "@testing-library/jest-dom": "^5.11.10",
         "@testing-library/react": "^11.2.6",
@@ -14,7 +15,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "GENERATE_SOURCEMAP=false react-scripts build",
+        "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },

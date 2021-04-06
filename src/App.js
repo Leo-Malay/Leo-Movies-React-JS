@@ -3,6 +3,7 @@ import "./CSS/App.css";
 import Home from "./Components/Home";
 import Movie from "./Components/Movie";
 import MovieDetail from "./Components/MovieDetail";
+import AboutMe from "./Components/AboutMe";
 
 const App = () => {
     return (
@@ -17,6 +18,9 @@ const App = () => {
                     </Route>
                     <Route exact path="/movie/:id">
                         <MovieDetail />
+                    </Route>
+                    <Route exact path="/aboutme">
+                        <AboutMe />
                     </Route>
                 </Switch>
             </HashRouter>
