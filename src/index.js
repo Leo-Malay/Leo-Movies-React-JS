@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { HashRouter } from "react-router-dom";
 import "./CSS/index.css";
 import App from "./App";
 import Header from "./Components/Header";
@@ -8,9 +9,11 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
     <React.StrictMode>
-        <Header />
-        <App />
-        <Footer />
+        <HashRouter>
+            <Header />
+            <App />
+            <Footer />
+        </HashRouter>
     </React.StrictMode>,
     document.getElementById("root")
 );

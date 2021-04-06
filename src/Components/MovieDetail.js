@@ -27,7 +27,14 @@ const MovieDetail = ({ props }) => {
         return (
             <div>
                 <p className="MovieNameDetail">{mdata.name}</p>
-                <iframe title={mdata.id} src={mdata.trailersrc + "?controls=0"}>
+                <iframe
+                    title={mdata.id}
+                    src={
+                        "https://www.youtube.com/embed/" +
+                        mdata.trailersrc +
+                        "?controls=0"
+                    }
+                >
                     Video
                 </iframe>
                 <br />
