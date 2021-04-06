@@ -1,4 +1,5 @@
-# Leo-Movies -> https://leomovies.herokuapp.com/#/
+# Leo-Movies
+### https://leomovies.herokuapp.com/#/
 
 
 This website is made using ReactJS to display list of movies and along with their trailers.
