@@ -1,9 +1,11 @@
-# Leo-Movies
+# Leo-Movies -> https://leomovies.herokuapp.com/#/
+
 
 This website is made using ReactJS to display list of movies and along with their trailers.
+If you like this project do give a star and Follow to my github profile!  :)
 
-## Test this Project Locally
-
+## To test this Project Locally
+Download the Project.
 In the project directory, you can run:
 
 ### `npm start`
