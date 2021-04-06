@@ -1,0 +1,23 @@
+.AmName {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px 0px;
+    margin: 0;
+}
+.AmSubName {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1px 0px;
+    margin: 0;
+}
+.AmDesc {
+    text-decoration: wavy;
+    padding: 40px 0px;
+    margin: 0;
+    width: 300px;
+}
+.AmLink {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0px;
+}
